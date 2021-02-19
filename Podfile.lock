@@ -1,0 +1,16 @@
+PODS:
+  - LineTextField (1.0.8)
+
+DEPENDENCIES:
+  - LineTextField (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - LineTextField
+
+SPEC CHECKSUMS:
+  LineTextField: bcef7232b38825a5ccc5d0016394c2215f8305c9
+
+PODFILE CHECKSUM: 3a17afa111b173488269d78c526fe0e8fd7714a8
+
+COCOAPODS: 1.10.1

@@ -12,7 +12,7 @@
 
 ### Preview
 
-![README_src/screenshot.png](README_src/screenshot.png = 50x)
+![README_src/screenshot.png](README_src/screenshot.png)
 
 ### To-do
 

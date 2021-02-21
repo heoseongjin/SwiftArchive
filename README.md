@@ -12,7 +12,7 @@
 
 ### Preview
 
-<img src="README_src/screenshot.png" alt="README_src/screenshot.png" style="zoom:10%;" />
+![README_src/screenshot.png](README_src/screenshot.png = 50x)
 
 ### To-do
 

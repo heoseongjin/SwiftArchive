@@ -12,7 +12,7 @@
 
 ### Preview
 
-![README_src/screenshot.png](README_src/screenshot.png)
+<img src="README_src/screenshot.png" width="48">
 
 ### To-do
 

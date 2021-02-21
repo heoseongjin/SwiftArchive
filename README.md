@@ -12,7 +12,7 @@
 
 ### Preview
 
-<img src="README_src/screenshot.png" alt="README_src/screenshot.png" style="zoom:40%;" />
+<img src="README_src/screenshot.png" alt="README_src/screenshot.png" style="zoom:10%;" />
 
 ### To-do
 

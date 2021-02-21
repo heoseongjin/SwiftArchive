@@ -13,6 +13,8 @@
 		BF5639FF25E14B240045A3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5639FD25E14B240045A3B4 /* Main.storyboard */; };
 		BF563A0125E14B280045A3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF563A0025E14B280045A3B4 /* Assets.xcassets */; };
 		BF563A0425E14B280045A3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF563A0225E14B280045A3B4 /* LaunchScreen.storyboard */; };
+		BF563A4225E2C0190045A3B4 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF563A4125E2C0190045A3B4 /* APIManger.swift */; };
+		BF563A4525E2C0480045A3B4 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF563A4425E2C0480045A3B4 /* SignInModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BF563A0025E14B280045A3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF563A0325E14B280045A3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF563A0525E14B280045A3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF563A4125E2C0190045A3B4 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
+		BF563A4425E2C0480045A3B4 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BF563A0025E14B280045A3B4 /* Assets.xcassets */,
 				BF563A0225E14B280045A3B4 /* LaunchScreen.storyboard */,
 				BF563A0525E14B280045A3B4 /* Info.plist */,
+				BF563A4125E2C0190045A3B4 /* APIManger.swift */,
+				BF563A4425E2C0480045A3B4 /* SignInModel.swift */,
 			);
 			path = urlsession_test;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				BF5639FC25E14B240045A3B4 /* ViewController.swift in Sources */,
 				BF5639F825E14B240045A3B4 /* AppDelegate.swift in Sources */,
+				BF563A4225E2C0190045A3B4 /* APIManger.swift in Sources */,
 				BF5639FA25E14B240045A3B4 /* SceneDelegate.swift in Sources */,
+				BF563A4525E2C0480045A3B4 /* SignInModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

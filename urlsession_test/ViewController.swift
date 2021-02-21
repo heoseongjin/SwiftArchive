@@ -9,13 +9,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var resultData: UILabel!
+    @IBOutlet var resultDataLabel: UILabel!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.resultDataLabel.numberOfLines = 20
     }
 
     @IBAction func networkRun(_ sender: Any) {
+        
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        let signIn = SignIn(type: "M", email: email, password: password)
+        
+        let signInModel = SignInModel(relativeURL: "/api_v1/auth/sign-in", signIn: signIn)
+        signInModel.fetchModel { (result: Result<Response, APIError>) in
+            switch result {
+            case .success(let model):
+                print(model)
+                DispatchQueue.main.async {
+                    self.resultDataLabel.text = "Access Token : \n\(model.accessToken)"
+                    self.resultDataLabel.sizeToFit()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    // HEO : 화면 터치 시 키보드 내려감
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+          self.view.endEditing(true)
+
     }
 }

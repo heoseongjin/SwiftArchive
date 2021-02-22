@@ -13,6 +13,12 @@
 		BF2BA8E125E3B56600C70173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2BA8DF25E3B56600C70173 /* Main.storyboard */; };
 		BF2BA8E325E3B56800C70173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2BA8E225E3B56800C70173 /* Assets.xcassets */; };
 		BF2BA8E625E3B56800C70173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2BA8E425E3B56800C70173 /* LaunchScreen.storyboard */; };
+		BF2BA8F125E3B7E400C70173 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BA8F025E3B7E400C70173 /* APIManager.swift */; };
+		BF2BA8F525E3B86200C70173 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BA8F425E3B86100C70173 /* SignInModel.swift */; };
+		BF2BA8FA25E3BB5800C70173 /* UIViewController_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BA8F925E3BB5800C70173 /* UIViewController_extension.swift */; };
+		BF2BA8FF25E3C0B400C70173 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BA8FE25E3C0B400C70173 /* Utils.swift */; };
+		BF2BA90325E3C7AB00C70173 /* SignOutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BA90225E3C7AB00C70173 /* SignOutModel.swift */; };
+		BF2BA90725E3E35400C70173 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2BA90625E3E35400C70173 /* UUID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BF2BA8E225E3B56800C70173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2BA8E525E3B56800C70173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2BA8E725E3B56800C70173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2BA8F025E3B7E400C70173 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BF2BA8F425E3B86100C70173 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		BF2BA8F925E3BB5800C70173 /* UIViewController_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_extension.swift; sourceTree = "<group>"; };
+		BF2BA8FE25E3C0B400C70173 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BF2BA90225E3C7AB00C70173 /* SignOutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutModel.swift; sourceTree = "<group>"; };
+		BF2BA90625E3E35400C70173 /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		BF2BA8D825E3B56600C70173 /* tokenKeyChain */ = {
 			isa = PBXGroup;
 			children = (
+				BF2BA8FD25E3C09D00C70173 /* KeyChain */,
+				BF2BA8F825E3BB0900C70173 /* Extension */,
+				BF2BA8EF25E3B7C800C70173 /* API */,
 				BF2BA8D925E3B56600C70173 /* AppDelegate.swift */,
 				BF2BA8DB25E3B56600C70173 /* SceneDelegate.swift */,
 				BF2BA8DD25E3B56600C70173 /* ViewController.swift */,
@@ -65,6 +80,33 @@
 				BF2BA8E725E3B56800C70173 /* Info.plist */,
 			);
 			path = tokenKeyChain;
+			sourceTree = "<group>";
+		};
+		BF2BA8EF25E3B7C800C70173 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BF2BA8F025E3B7E400C70173 /* APIManager.swift */,
+				BF2BA8F425E3B86100C70173 /* SignInModel.swift */,
+				BF2BA90225E3C7AB00C70173 /* SignOutModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BF2BA8F825E3BB0900C70173 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF2BA8F925E3BB5800C70173 /* UIViewController_extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF2BA8FD25E3C09D00C70173 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				BF2BA8FE25E3C0B400C70173 /* Utils.swift */,
+				BF2BA90625E3E35400C70173 /* UUID.swift */,
+			);
+			path = KeyChain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2BA90725E3E35400C70173 /* UUID.swift in Sources */,
+				BF2BA8FA25E3BB5800C70173 /* UIViewController_extension.swift in Sources */,
+				BF2BA8F125E3B7E400C70173 /* APIManager.swift in Sources */,
 				BF2BA8DE25E3B56600C70173 /* ViewController.swift in Sources */,
+				BF2BA8FF25E3C0B400C70173 /* Utils.swift in Sources */,
 				BF2BA8DA25E3B56600C70173 /* AppDelegate.swift in Sources */,
 				BF2BA8DC25E3B56600C70173 /* SceneDelegate.swift in Sources */,
+				BF2BA8F525E3B86200C70173 /* SignInModel.swift in Sources */,
+				BF2BA90325E3C7AB00C70173 /* SignOutModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7555R8ZYJ2;
 				INFOPLIST_FILE = tokenKeyChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7555R8ZYJ2;
 				INFOPLIST_FILE = tokenKeyChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

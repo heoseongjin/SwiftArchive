@@ -15,7 +15,6 @@ public enum Result<Success, Failure> where Failure : Error {
     case failure(Failure)
 }
 
-
 enum APIError: Error {
     case data
     case decodingJSON

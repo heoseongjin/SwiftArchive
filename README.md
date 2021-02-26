@@ -13,7 +13,7 @@
 
 ### Preview
 
-<img src="README_src/screenshot.png" width="400">
+<img src="README_src/screenShot.png" width="400">
 
 
 

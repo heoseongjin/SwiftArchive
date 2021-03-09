@@ -12,13 +12,10 @@ func loadUUID() -> String {
     let tk = TokenUtils()
     
     if let uuid = tk.load(Bundle.main.bundleIdentifier!, account: "uuid") {
-        
         return uuid
-        
     } else {
-        
-        tk.save(Bundle.main.bundleIdentifier!, account: "uuid", value: UUID().uuidString)
-        return loadUUID()
-        
+        let inital_uuid = UUID().uuidString
+        tk.save(Bundle.main.bundleIdentifier!, account: "uuid", value: inital_uuid)
+        return inital_uuid
     }
 }

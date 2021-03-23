@@ -19,6 +19,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV4-za-S14">
                                 <rect key="frame" x="16" y="617" width="64" height="30"/>
                                 <state key="normal" title="Line"/>
+                                <connections>
+                                    <action selector="btnDrawLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNo-Qm-0mk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoreGraphic Draw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-9g-617">
                                 <rect key="frame" x="16" y="30" width="258" height="36"/>
@@ -29,18 +32,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERM-qW-aCv">
                                 <rect key="frame" x="88" y="617" width="63.5" height="30"/>
                                 <state key="normal" title="Rect"/>
+                                <connections>
+                                    <action selector="btnDrawRect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BwJ-ax-5sp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3E-Y1-8US">
                                 <rect key="frame" x="159.5" y="617" width="64" height="30"/>
                                 <state key="normal" title="Circle"/>
+                                <connections>
+                                    <action selector="btnDrawCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIf-yV-PBJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36m-M0-FqT">
                                 <rect key="frame" x="231.5" y="617" width="63.5" height="30"/>
                                 <state key="normal" title="Arc"/>
+                                <connections>
+                                    <action selector="btnDrawArc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="50L-0o-HPS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkF-ru-pX9">
                                 <rect key="frame" x="303" y="617" width="64" height="30"/>
                                 <state key="normal" title="Fill"/>
+                                <connections>
+                                    <action selector="btnDrawFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbm-0H-eaJ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TAJ-pR-gwu">
                                 <rect key="frame" x="16" y="82" width="343" height="519"/>
@@ -72,6 +87,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NkF-ru-pX9" secondAttribute="trailing" constant="8" id="v9g-xx-z6v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="TAJ-pR-gwu" id="yJs-Gj-Iwz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,10 +6,10 @@ target 'RealmTutorial' do
   use_frameworks!
 
   # Pods for RealmTutorial
+  pod 'RealmSwift'
 
   target 'RealmTutorialTests' do
     inherit! :search_paths
-    pod 'RealmSwift'
 
     # Pods for testing
   end
